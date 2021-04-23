@@ -9,11 +9,10 @@
     d:DesignWidth="800"
     mc:Ignorable="d">
     <Grid>
-        <TextBlock
+        <Button
+            Padding="16,8"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            FontSize="36"
-            FontWeight="Medium"
-            Text="Проверка! Куница, куница, я Хорек!" />
+            Content="Тест Модального окна" />
     </Grid>
 </UserControl>

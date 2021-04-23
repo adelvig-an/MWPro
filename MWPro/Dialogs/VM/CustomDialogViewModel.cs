@@ -47,7 +47,7 @@ namespace MWPro.Dialogs.VM
             {
                 if (closeCommand == null)
                 {
-                    closeCommand = new RelayCommand(_ => { closeHandler(this); });
+                    closeCommand = new RelayCommand(() => { closeHandler(this); });
                 }
                 return closeCommand;
             }

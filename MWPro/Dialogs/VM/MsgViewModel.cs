@@ -53,7 +53,7 @@ namespace MWPro.Dialogs.VM
                 }
             }
         }
-        public ICommand CloseCommand
+        virtual public ICommand CloseCommand
         {
             get => closeCommand;
             set

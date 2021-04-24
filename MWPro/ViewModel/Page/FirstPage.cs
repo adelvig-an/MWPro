@@ -1,4 +1,5 @@
-﻿using MWPro.ViewModel.Base;
+﻿using MWPro.Dialogs;
+using MWPro.ViewModel.Base;
 using System.Windows.Input;
 
 namespace MWPro.ViewModel.Page
@@ -14,11 +15,15 @@ namespace MWPro.ViewModel.Page
                 if (showDialogAction == null)
                 {
                     showDialogAction = new RelayCommand(() => 
-                    { }, () => { return true; });
+                    {
+                        CustomDialogs.RunCustomFromVm(this);
+                    }, () => { return true; });
                 }
                 return showDialogAction;
             }
         }
+
+        internal CustomDialogs CustomDialogs = new CustomDialogs();
 
         public FirstPage()
         {

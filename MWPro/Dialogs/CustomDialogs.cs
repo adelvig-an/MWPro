@@ -1,8 +1,6 @@
 ﻿using MWindowInterfacesLib.Interfaces;
-using MWPro.ViewModel.Base;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace MWPro.Dialogs
 {
@@ -28,5 +26,6 @@ namespace MWPro.Dialogs
 
             await coord.ShowMetroDialogAsync(context, customDialog);
         }
+
     }
 }

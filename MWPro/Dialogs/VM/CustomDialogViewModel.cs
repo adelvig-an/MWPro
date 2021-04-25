@@ -20,7 +20,6 @@ namespace MWPro.Dialogs.VM
         {
             this.closeHandler = closeHandler;
         }
-
         public string FirstName
         {
             get { return firstName; }
@@ -30,7 +29,6 @@ namespace MWPro.Dialogs.VM
                 RaisePropertyChanged(() => this.FirstName);
             }
         }
-
         public string LastName
         {
             get { return lastName; }
@@ -40,7 +38,6 @@ namespace MWPro.Dialogs.VM
                 RaisePropertyChanged(() => this.LastName);
             }
         }
-
         public override ICommand CloseCommand
         {
             get
